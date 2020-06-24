@@ -1,0 +1,28 @@
+.ChatMain
+  .ChatMain__group-info
+    .ChatMain__group
+      .ChatMain__group-name
+        test
+      %ul.ChatMain__group-member
+        Member : 
+        %li.ChatMain__group-member-list
+          masa
+    = link_to "#", class: "ChatMain__editButton" do
+      Edit
+  .ChatMain__message-list
+    .ChatMain__messageBox
+      .ChatMain__messageBox-info
+        .ChatMain__messageBox-info-name
+          masa
+        .ChatMain__messageBox-info-date
+          2019/11/20(Wed)17:43:34
+      .ChatMain__messageBox-message
+        おはよう！
+  .ChatMain__message-form
+    %form.ChatMain__message-form-new
+      .ChatMain__formBox
+        %input{type: "text", class: "ChatMain__formBox-contents", placeholder: "type a message"}
+        %label{class: "ChatMain__formBox-inputImage"}
+          = icon('far', 'image')
+          %input{type: "file", class: "ChatMain__formBox-inputImage-file"}
+      %input.ChatMain__formBox-sendButton{type: "submit" ,value: "Send"}
