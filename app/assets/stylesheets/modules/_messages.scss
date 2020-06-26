@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.SideBar {
+  width: 300px;
+  &__user-name {
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #253141;
+  }
+  &__group-list {
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    background-color: #2f3e51;
+  }
+}
+
+.ChatMain {
+  width: calc(100vw - 300px);
+  &__group-info {
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: solid 1px #eeeeee;
+  }
+  &__message-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 0 0 40px;
+  }
+  &__message-form {
+    height: 90px;
+    padding: 20px 40px 20px 50px;
+    background-color: #d2d2d2;
+    &-new {
+      display: flex;
+    }
+  }
+}
+
+.TopItems {
+  height: 20px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  &__name {
+  }
+  &__icons {
+    display: flex;
+    &-icon {
+      margin-left: 5px;
+    }
+  }
+}
+
+.icon {
+  color: #ffffff;
+}
+
+.SideBar__group {
+  color: #ffffff;
+  &-name {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  &-message {
+    font-size: 11px;
+    margin: 5px 0 40px;
+  }
+}
+
+.ChatMain__group {
+  padding-top: 35px;
+  &-name {
+    font-size: 20px;
+    color: #333333;
+  }
+  &-member {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 15px;
+    display: flex;
+    &-list {
+      padding-left: 5px;
+    }
+  }
+}
+
+.ChatMain__editButton {
+  font-size: 16px;
+  color: #38aef0;
+  display: block;
+  height: 40px;
+  width: 72px;
+  margin-top: 28px;
+  padding: 0 20px;
+  line-height: 40px;
+  border: 1px solid #38aef0;
+  text-decoration: none;
+}
+
+.ChatMain__messageBox {
+  margin-bottom: 46px;
+  &-info {
+    display: flex;
+    &-name {
+      color: #333333;
+      font-size: 16px;
+    }
+    &-date {
+      color: #999999;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+  &-message {
+    color: #434a54;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+.ChatMain__formBox {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  padding: 0 40px 0 10px;
+  &-contents {
+    height: 50px;
+    border: none;
+  }
+  &-inputImage {
+    font-size: 25px;
+    line-height: 50px;
+    right: 10px;
+    position: absolute;
+    &-file {
+      display: none;
+    }
+  }
+}
+
+.ChatMain__formBox-sendButton {
+  height: 50px;
+  padding: 0 30px;
+  margin-left: 15px;
+  background-color: #38aef0;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+}
