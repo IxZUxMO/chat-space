@@ -69,14 +69,15 @@
 }
 
 .SideBar__group {
-  color: #ffffff;
   &-name {
     font-size: 15px;
     padding-top: 20px;
+    color: #ffffff;
   }
   &-message {
     font-size: 11px;
     margin: 5px 0 40px;
+    color: #ffffff;
   }
 }
 
@@ -93,6 +94,7 @@
     display: flex;
     &-list {
       padding-left: 5px;
+      display: flex;
     }
   }
 }
