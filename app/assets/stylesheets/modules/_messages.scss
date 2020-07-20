@@ -19,6 +19,7 @@
     height: calc(100vh - 100px);
     padding: 0 20px;
     background-color: #2f3e51;
+    overflow: scroll;
   }
 }
 
@@ -36,6 +37,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
+    overflow: scroll;
   }
   &__message-form {
     height: 90px;
