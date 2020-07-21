@@ -19,7 +19,7 @@
       .ChatMain__messageBox-message
         = render @messages
   .ChatMain__message-form
-    = form_with model: [@group, @message], html: {class: "ChatMain__message-form-new"}, local: true do |f|
+    = form_with model: [@group, @message], html: {class: "ChatMain__message-form-new"}, local: true, id: 'new_comment' do |f|
       .ChatMain__formBox
         = f.text_field :content, class: 'ChatMain__formBox-contents', placeholder: 'type a message'
         = f.label :image, class: 'ChatMain__formBox-inputImage' do
